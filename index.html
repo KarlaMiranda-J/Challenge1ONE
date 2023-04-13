@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-custom p-2 d-flex align-content-center">
+        <div class="container-fluid container">
+            <div class="ms-2">
+                <a href="https://github.com/KarlaMiranda-J"><img src="img/logo.png" width="100" height="100" class="d-inline-block align-top rounded-circle me-3"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main text-center main pt-2">
+        <div class="row p-0 m-0">
+            <div class="col">
+                <div class="container custom-container shadow p-3 me-5 mb-4 bg-body-tertiary rounded">
+                    <div class="row">
+                        <div class="mb-3">
+                            <textarea class="form-control text" placeholder="Ingresa tu texto aquí..." rows="11"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4">
+                <div class="container custom-container shadow p-3 me-5 mb-4 bg-body-tertiary rounded d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="row">
+                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                            <img src="img/nothingfound.png" width="200" height="120" alt="nothing found" class="mb-2">
+                            <p class="fs-5 p-0 m-0 txt1">Ningún mensaje fue encontrado</p>
+                            <p class="p-0 m-0 txt2">Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                    <div class="row" id="traduccion">
+                        <div class="">
+                            <textarea class="form-control text" rows="11"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-content-center">
+            <span class="material-symbols-outlined d-flex align-self-start mb-3 ms-3 fs-4 txt3">error
+                <p class="txt3 d-flex align-self-start self ms-2 mt-1 fs-6">Solo letras minúsculas y sin acentos</p>
+            </span>
+        </div>
+        <div class="row pb-5">
+            <div class="col">
+                <button class="btn btn-primary me-5">Encriptar</button>
+                <button class="btn btn-outline-primary">Desencriptar</button>
+            </div>
+            <div class="col col-lg-4">
+                <button class="btn btn-primary" id="copy">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>Todos los derechos reservados © | <a href="https://github.com/KarlaMiranda-J" class="link">Karla Michelle Miranda Juárez</a></span>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

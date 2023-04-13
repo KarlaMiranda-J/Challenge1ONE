@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Gotham', sans-serif;
+}
+
+body {
+    background-color: #ECF1F4; 
+    height:100%;
+}
+
+.main{
+    height: 75vh;
+}
+
+.text{
+    border-style: hidden;
+    resize: none;
+    background-color: #ECF1F4;
+}
+
+.custom-container {
+    height: 50vh;
+}
+
+#traduccion {
+    display: none;
+}
+
+#copy {
+    display: none;
+}
+
+button { 
+    width: 10em;
+    margin-top: 1fr;
+    margin-bottom: 50em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.txt1 {
+    color: #202f6e;
+    font-family: 'Gotham Black', sans-serif;
+}
+
+.txt2 {
+    color: #202f6e;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+.txt3 {
+    color: #20306e9f;
+}
+
+.link {
+    text-decoration: none;
+    color:black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 26px 0px 26px 0px;
+    z-index:1000;
+    cursor: default;
+}
