@@ -119,6 +119,9 @@ footer {
     .main{
         margin-bottom: 20%;
     }
+    .btn{
+        min-width: 100%;
+    }
     footer {
         margin-top: 10%;
     }
