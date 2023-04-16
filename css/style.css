@@ -113,7 +113,11 @@ footer {
         width: 100%;
         margin-bottom: 15%;
     }
-    #copy{
+    .item4{
+        display:flex;
+        flex-direction: column;
+    }
+    .main{
         margin-bottom: 20%;
     }
     footer {
