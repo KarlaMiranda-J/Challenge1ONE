@@ -22,10 +22,13 @@ body {
 
 .item1 {
     width: 65%;
+    height: 45vh;
+    cursor:text;
 }
 
 .item2 {
     width: 30%;
+    height: 45vh;
 }
 
 .item3 {
@@ -51,9 +54,14 @@ body {
     height: 50vh;
 }
 
+#intxt{
+    border: none;
+}
+
 #traduccion {
     display: none;
     background-color: #F8F9FA;
+    text-align: start;
 }
 
 #copy {
