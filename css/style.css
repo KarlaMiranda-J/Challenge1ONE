@@ -108,19 +108,19 @@ footer {
 }
 
 @media (max-width: 600px){
-    .item1, .item2, .item3{
+    .item1, .item2, .item3, .item4{
         width: 100%;
         margin: 0px;
     }
-    .item4a, .item4b, .item4{
+    .item4a, .item4b{
         width: 100%;
         margin-bottom: 15%;
     }
     .main{
-        margin-bottom: 20%;
+        margin-bottom: 30%;
     }
     .btn{
-        min-width: 100%;
+        width: 100%;
     }
     footer {
         margin-top: 10%;
