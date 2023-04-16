@@ -113,7 +113,10 @@ footer {
         width: 100%;
         margin-bottom: 15%;
     }
+    #copy{
+        margin-bottom: 20%;
+    }
     footer {
-        margin-top: 30%;
+        margin-top: 10%;
     }
 }
