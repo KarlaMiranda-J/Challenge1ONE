@@ -2,23 +2,49 @@
 
 * {
     box-sizing: border-box;
-    overflow: hidden;
     font-family: 'Gotham', sans-serif;
 }
 
 body {
     background-color: #ECF1F4; 
-    height:100%;
-}
-
-.main{
-    height: 75vh;
+    max-height: fit-content;
 }
 
 .text{
     border-style: hidden;
     resize: none;
-    background-color: #ECF1F4;
+    background-color: #F8F9FA;
+}
+
+.item0 {
+    width: 100%;
+}
+
+.item1 {
+    width: 65%;
+}
+
+.item2 {
+    width: 30%;
+}
+
+.item3 {
+    width: 100%;
+}
+
+.item4 {
+    width: 100%;
+    max-height: 5em;
+}
+
+.item4a {
+    width: 70%;
+    height: 5em;
+}
+
+.item4b {
+    width: 30%;
+    height: 5em;
 }
 
 .custom-container {
@@ -27,6 +53,7 @@ body {
 
 #traduccion {
     display: none;
+    background-color: #F8F9FA;
 }
 
 #copy {
@@ -35,8 +62,7 @@ body {
 
 button { 
     width: 10em;
-    margin-top: 1fr;
-    margin-bottom: 50em;
+    margin-top: 1em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -60,13 +86,31 @@ button {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     color: black;
     text-align: center;
-    padding: 26px 0px 26px 0px;
+    padding: 20px 0px 20px 0px;
     z-index:1000;
     cursor: default;
+}
+
+@media (max-width: 600px){
+    .item1, .item2, .item3, .item4a, .item4b{
+        width: 100%;
+        margin: 0px;
+    }
+    #intxt, #traduccion{
+        height: 5em;
+    }
+    .item4{
+        margin-bottom: 10%;
+    }
+    footer {
+        margin-top: 1em;
+    }
+    #img{
+        display: none;
+    }
 }
