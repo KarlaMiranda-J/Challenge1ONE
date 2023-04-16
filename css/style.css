@@ -29,6 +29,7 @@ body {
 .item2 {
     width: 30%;
     height: 45vh;
+    overflow-wrap: break-word;
 }
 
 .item3 {
