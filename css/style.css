@@ -112,8 +112,6 @@ footer {
     .item4a, .item4b, .item4{
         width: 100%;
         margin-bottom: 15%;
-    }
-    .item4{
         display:flex;
         flex-wrap: wrap;
     }
