@@ -96,21 +96,3 @@ footer {
     cursor: default;
 }
 
-@media (max-width: 600px){
-    .item1, .item2, .item3, .item4a, .item4b{
-        width: 100%;
-        margin: 0px;
-    }
-    #intxt, #traduccion{
-        height: 5em;
-    }
-    .item4{
-        margin-bottom: 10%;
-    }
-    footer {
-        margin-top: 1em;
-    }
-    #img{
-        display: none;
-    }
-}

@@ -4,7 +4,7 @@ var desbtn = document.getElementById("desbtn");
 var copy = document.getElementById("copy");
 var msg1 = document.getElementById("404");
 var msg2 = document.getElementById("404i");
-var img = document.getElementById("404img");
+var img = document.getElementById("img");
 var trad = document.getElementById("traduccion");
 
 enbtn.onclick = codeB;
