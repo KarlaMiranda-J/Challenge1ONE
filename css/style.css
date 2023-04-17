@@ -24,6 +24,7 @@ body {
     width: 65%;
     height: 45vh;
     cursor:text;
+    overflow:hidden;
 }
 
 .item2 {
@@ -59,12 +60,18 @@ body {
 
 #intxt{
     border: none;
+    height: 40vh;
+    text-align: start;
+    word-break: break-all;
+    overflow-y: scroll;
 }
 
 #traduccion {
     display: none;
     background-color: #F8F9FA;
     text-align: start;
+    height: 40vh;
+    overflow-y: scroll;
 }
 
 #copy {
@@ -109,8 +116,12 @@ footer {
 
 @media (max-width: 600px){
     .item1, .item2, .item3, .item4{
+        height: 25vh;
         width: 100%;
         margin: 0px;
+    }
+    #intxt, #traduccion{
+        height: 20vh;
     }
     .item4a, .item4b{
         width: 100%;
@@ -124,5 +135,8 @@ footer {
     }
     footer {
         margin-top: 10%;
+    }
+    img{
+        display: none;
     }
 }

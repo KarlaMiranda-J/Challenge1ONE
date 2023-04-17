@@ -6,52 +6,60 @@ var msg1 = document.getElementById("404");
 var msg2 = document.getElementById("404i");
 var img = document.getElementById("img");
 var trad = document.getElementById("traduccion");
-var item1 = document.querySelector(".item1");
 
 enbtn.onclick = codeB;
 desbtn.onclick = decodeB;
 copy.onclick = copyF;
-item1.addEventListener("click", fcs, false);
+intxt.onclick = fcs;
+
 
 function fcs(){
-    intxt.focus();
+    if(intxt.focus){
+        intxt.textContent="";
+    }
+}
+
+function placeholder(){
+    intxt.textContent="Ingresa tu texto aquí...";
 }
 
 function codeB(){
 
-    if(intxt.value != "" && validar(intxt.value)==true){
+    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        code(intxt.value);
+        code(intxt.textContent);
+        intxt.textContent="Ingresa tu texto aquí...";
     }
 
 }
 
 function decodeB(){
 
-    if(intxt.value != "" && validar(intxt.value)==true){
+    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        decode(intxt.value);
+        decode(intxt.textContent);
+        intxt.textContent="Ingresa tu texto aquí...";
     }
 
 }
 
 function copyF(){
 
-    if(trad.value != ""){
+    if(trad.textContent != ""){
         copy.style.display="none";
         trad.style.display="none";
         msg1.style.display="block";
         msg2.style.display="block";
         img.style.display="block";
-        intxt.value = trad.textContent;
+        intxt.textContent = trad.textContent;
         navigator.clipboard.writeText(trad.textContent);
     }
 
@@ -65,7 +73,7 @@ function validar(msg){
             return true;
         }else{
             alert("Error. Ingresa solo letras minúsculas, sin acentos ni otros caracteres especiales.");
-            intxt.value = "";
+            intxt.textContent = "";
             return false;  
         }  
 
@@ -100,7 +108,7 @@ function code(msg){
     }
 
     trad.textContent = newtxt;
-    intxt.value = "";
+    intxt.textContent = "";
 
 }
 
@@ -115,6 +123,6 @@ function decode(msg){
     texto = texto.replace(/ufat/g, "u");
 
     trad.textContent = texto;
-    intxt.value = "";
+    intxt.textContent = "";
 
 }
