@@ -17,11 +17,11 @@ function fcs(){
     if(intxt.focus){
         intxt.value="";
     }
-}*/
+}
 
 function placeholder(){
     intxt.value="Ingresa tu texto aquí...";
-}
+}*/
 
 function codeB(){
 
