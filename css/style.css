@@ -60,7 +60,8 @@ body {
 
 #intxt{
     border: none;
-    height: 40vh;
+    height: 15em;
+    resize: none;
     text-align: start;
     word-break: break-all;
     overflow-y: scroll;
@@ -73,8 +74,8 @@ body {
     text-align: start;
     height: 40vh;
     overflow-y: scroll;
-    width: auto;
 }
+
 
 #copy {
     display: none;
