@@ -24,6 +24,7 @@ body {
     width: 65%;
     height: 45vh;
     cursor:text;
+    overflow:hidden;
 }
 
 .item2 {
@@ -72,6 +73,7 @@ body {
     text-align: start;
     height: 40vh;
     overflow-y: scroll;
+    width: auto;
 }
 
 #copy {
