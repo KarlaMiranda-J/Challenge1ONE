@@ -24,7 +24,6 @@ body {
     width: 65%;
     height: 45vh;
     cursor:text;
-    overflow:hidden;
 }
 
 .item2 {
@@ -123,7 +122,6 @@ footer {
     }
     #intxt, #traduccion{
         height: 30vh;
-        color:black;
     }
     .item4a, .item4b{
         width: 100%;
