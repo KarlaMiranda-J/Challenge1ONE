@@ -117,12 +117,12 @@ footer {
 
 @media (max-width: 600px){
     .item1, .item2, .item3, .item4{
-        height: 25vh;
+        height: 35vh;
         width: 100%;
         margin: 0px;
     }
     #intxt, #traduccion{
-        height: 20vh;
+        height: 30vh;
         color:black;
     }
     .item4a, .item4b{
