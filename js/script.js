@@ -25,7 +25,7 @@ function placeholder(){
 
 function codeB(){
 
-    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
+    if(intxt.value != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
@@ -46,14 +46,14 @@ function decodeB(){
         msg2.style.display="none";
         img.style.display="none";
         decode(intxt.value);
-        intxt.textContent="Ingresa tu texto aquí...";
+        intxt.value="Ingresa tu texto aquí...";
     }
 
 }
 
 function copyF(){
 
-    if(trad.textContent != ""){
+    if(trad.value != ""){
         copy.style.display="none";
         trad.style.display="none";
         msg1.style.display="block";
@@ -61,8 +61,8 @@ function copyF(){
         if(!x.matches){
             img.style.display="block";
         }
-        intxt.value = trad.textContent;
-        navigator.clipboard.writeText(trad.textContent);
+        intxt.value = trad.value;
+        navigator.clipboard.writeText(trad.value);
     }
 
 }
@@ -109,8 +109,8 @@ function code(msg){
         }
     }
 
-    trad.textContent = newtxt;
-    intxt.textContent = "";
+    trad.value = newtxt;
+    intxt.value = "";
 
 }
 
@@ -124,7 +124,7 @@ function decode(msg){
     texto = texto.replace(/ober/g, "o");
     texto = texto.replace(/ufat/g, "u");
 
-    trad.textContent = texto;
-    intxt.textContent = "";
+    trad.value = texto;
+    intxt.value = "";
 
 }
