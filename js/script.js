@@ -11,41 +11,41 @@ const x = window.matchMedia('(max-width: 1000px)');
 enbtn.onclick = codeB;
 desbtn.onclick = decodeB;
 copy.onclick = copyF;
-intxt.onclick = fcs;
+/*intxt.onclick = fcs;
 
 function fcs(){
     if(intxt.focus){
-        intxt.textContent="";
+        intxt.value="";
     }
-}
+}*/
 
 function placeholder(){
-    intxt.textContent="Ingresa tu texto aquí...";
+    intxt.value="Ingresa tu texto aquí...";
 }
 
 function codeB(){
 
-    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
+    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        code(intxt.textContent);
-        intxt.textContent="Ingresa tu texto aquí...";
+        code(intxt.value);
+        intxt.value="Ingresa tu texto aquí...";
     }
 
 }
 
 function decodeB(){
 
-    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
+    if(intxt.value != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        decode(intxt.textContent);
+        decode(intxt.value);
         intxt.textContent="Ingresa tu texto aquí...";
     }
 
@@ -61,7 +61,7 @@ function copyF(){
         if(!x.matches){
             img.style.display="block";
         }
-        intxt.textContent = trad.textContent;
+        intxt.value = trad.textContent;
         navigator.clipboard.writeText(trad.textContent);
     }
 
@@ -75,7 +75,7 @@ function validar(msg){
             return true;
         }else{
             alert("Error. Ingresa solo letras minúsculas, sin acentos ni otros caracteres especiales.");
-            intxt.textContent = "";
+            intxt.value = "";
             return false;  
         }  
 
