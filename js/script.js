@@ -6,12 +6,12 @@ var msg1 = document.getElementById("404");
 var msg2 = document.getElementById("404i");
 var img = document.getElementById("img");
 var trad = document.getElementById("traduccion");
+const x = window.matchMedia('(max-width: 1000px)');
 
 enbtn.onclick = codeB;
 desbtn.onclick = decodeB;
 copy.onclick = copyF;
 intxt.onclick = fcs;
-
 
 function fcs(){
     if(intxt.focus){
@@ -58,7 +58,9 @@ function copyF(){
         trad.style.display="none";
         msg1.style.display="block";
         msg2.style.display="block";
-        img.style.display="block";
+        if(!x.matches){
+            img.style.display="block";
+        }
         intxt.textContent = trad.textContent;
         navigator.clipboard.writeText(trad.textContent);
     }
