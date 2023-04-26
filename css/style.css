@@ -10,12 +10,6 @@ body {
     max-height: fit-content;
 }
 
-.text{
-    border-style: hidden;
-    resize: none;
-    background-color: #F8F9FA;
-}
-
 .item0 {
     width: 100%;
 }
@@ -62,7 +56,7 @@ body {
     border: none;
     height: 40vh;
     resize: none;
-    text-align: start;
+    text-align: justify;
     word-break: break-all;
     overflow-y: scroll;
     background-color: #F8F9FA;
