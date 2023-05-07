@@ -11,49 +11,49 @@ const x = window.matchMedia('(max-width: 1000px)');
 enbtn.onclick = codeB;
 desbtn.onclick = decodeB;
 copy.onclick = copyF;
-/*intxt.onclick = fcs;
+intxt.onclick = fcs;
 
 function fcs(){
     if(intxt.focus){
-        intxt.value="";
+        intxt.textContent="";
     }
 }
 
 function placeholder(){
-    intxt.value="Ingresa tu texto aquí...";
-}*/
+    intxt.textContent="Ingresa tu texto aquí...";
+}
 
 function codeB(){
-
-    if(intxt.value != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
+    
+    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        code(intxt.value);
-        intxt.value="Ingresa tu texto aquí...";
+        code(intxt.textContent);
+        intxt.textContent="Ingresa tu texto aquí...";
     }
 
 }
 
 function decodeB(){
 
-    if(intxt.value != "Ingresa tu texto aquí..." && validar(intxt.value)==true){
+    if(intxt.textContent != "Ingresa tu texto aquí..." && validar(intxt.textContent)==true){
         copy.style.display="block";
         trad.style.display="block";
         msg1.style.display="none";
         msg2.style.display="none";
         img.style.display="none";
-        decode(intxt.value);
-        intxt.value="Ingresa tu texto aquí...";
+        decode(intxt.textContent);
+        intxt.textContent="Ingresa tu texto aquí...";
     }
 
 }
 
 function copyF(){
 
-    if(trad.value != ""){
+    if(trad.textContent != ""){
         copy.style.display="none";
         trad.style.display="none";
         msg1.style.display="block";
@@ -61,8 +61,8 @@ function copyF(){
         if(!x.matches){
             img.style.display="block";
         }
-        intxt.value = trad.value;
-        navigator.clipboard.writeText(trad.value);
+        intxt.textContent = trad.textContent;
+        navigator.clipboard.writeText(trad.textContent);
     }
 
 }
@@ -75,7 +75,7 @@ function validar(msg){
             return true;
         }else{
             alert("Error. Ingresa solo letras minúsculas, sin acentos ni otros caracteres especiales.");
-            intxt.value = "";
+            intxt.textContent = "";
             return false;  
         }  
 
@@ -109,8 +109,8 @@ function code(msg){
         }
     }
 
-    trad.value = newtxt;
-    intxt.value = "";
+    trad.textContent = newtxt;
+    intxt.textContent = "";
 
 }
 
@@ -124,7 +124,7 @@ function decode(msg){
     texto = texto.replace(/ober/g, "o");
     texto = texto.replace(/ufat/g, "u");
 
-    trad.value = texto;
-    intxt.value = "";
+    trad.textContent = texto;
+    intxt.textContent = "";
 
 }
